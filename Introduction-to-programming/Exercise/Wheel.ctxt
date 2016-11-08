@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=size\ pressure
+comment0.target=Wheel(double,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Wheel\r\n
+comment1.params=
+comment1.target=double\ getSize()
+comment2.params=pressure
+comment2.target=void\ setPressure(double)
+comment3.params=
+comment3.target=double\ getPressure()
+comment4.params=
+comment4.target=boolean\ isOperational()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=
+comment6.target=void\ print()
+numComments=7

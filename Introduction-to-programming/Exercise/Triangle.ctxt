@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Triangle()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Triangle\r\n
+comment1.params=height\ base
+comment1.target=double\ computeArea(double,\ double)
+comment1.text=\r\n\ A\ method\ which\ calculates\ de\ area\ of\ our\ triangle\r\n\ \r\n\ @param\ \ height\ \ \ (meters)\ Contains\ the\ height\ of\ the\ triangle.\r\n\ @param\ \ base\ \ \ (meters)\ Measure\ of\ it's\ base.\r\n\ @return\ area\ \ \ \ (square\ meters)\ The\ resulting\ area\ of\ the\ triangle.\r\n
+numComments=2

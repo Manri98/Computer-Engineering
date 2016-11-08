@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Test()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Test\n
+comment1.params=
+comment1.target=boolean\ testGender()
+comment1.text=\n\ Test\ the\ gender-related\ methods\ in\ the\ Person\ class\n\ \n\ @return\ boolean\ True\ if\ everything\ is\ ok\ and\ False\ if\ it's\ not\n
+comment2.params=
+comment2.target=boolean\ testAge()
+comment2.text=\n\ Test\ the\ age-related\ methods\ in\ the\ Person\ class\n\ \n\ @return\ boolean\ True\ if\ everything\ is\ ok\ and\ False\ if\ it's\ not\n
+comment3.params=
+comment3.target=boolean\ test()
+comment3.text=\n\ Call\ all\ the\ testers\n\ \n\ @return\ boolean\ True\ if\ everything\ is\ ok\ and\ False\ if\ it's\ not\n
+numComments=4
