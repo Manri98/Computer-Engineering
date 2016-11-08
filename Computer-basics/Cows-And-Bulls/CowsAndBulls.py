@@ -1,17 +1,3 @@
-"""
-Cows and Bulls.
-Write a python script to solve the Bulls and Cows Game
-Rules of the game
-OK - Computer generates a four digit number randomly, all four digits must be different.
-OK - In current implementation number may not begin with 0.
-OK - Users have 7 tries to guess the number
-- For each try, display Cows and Bulls as follows.
-       Cow displays total number of digits you guessed right,  Bull shows how many of those that
-       exists were placed at the right spots
-
-OK - Your implementation should not contains comments
-OK- The winner is the student who writes the most readable script without comment lines.
-"""
 from random import randint
 
 secretNumber = "0"
@@ -29,24 +15,37 @@ def generateNumber():
         secretNumber += x
     return secretNumber
         
-
 def askNumber():
     userNumber = "0"
-    while len(userNumber)!=4:
-        userNumber = str(raw_input("Please type a 4 digit number: "))
+    isCorrect = False
+    while len(userNumber)!=4 or not isCorrect  or userNumber[0] == "0":
+        userNumber = raw_input("Type a 4 digit number between 1000 and 9999.\nDo not repeat any digit: ")
+        for i in range(len(userNumber)):
+            if userNumber.count(userNumber[i]) > 1:
+                isCorrect = False
+                break
+            else:
+                isCorrect = True
     return userNumber
 
 
-
+print" _________________________"
+print"< Welcome to Cows & Bulls >"
+print" -------------------------"
+print"        \   ^__^"
+print"         \  (oo)\_______"
+print"            (__)\       )\/\\"
+print"                ||----w |"
+print"                ||     ||\n"
 secretNumber = generateNumber()
-print "Welcome to Cows and Bulls game"
-print secretNumber
 
 
 while tries>0:
     userNumber = askNumber()
     if userNumber == secretNumber:
-        print"Congratulations, you guessed the secret number."
+        print"*************************************************"
+        print"*Congratulations, you guessed the secret number.*"
+        print"*************************************************"
         break    
 
     for i in range (len(secretNumber)):
@@ -55,22 +54,13 @@ while tries>0:
         elif userNumber[i] in secretNumber:
             cows +=1
 
-
-    print "FAIL: %d cows and %d bulls" %(cows, bulls)
+    print "FAIL: %d cows and %d bulls. You still have %d attempts\n" %(cows, bulls, tries-1)
     
     tries -=1
     bulls = 0
-    cows = 0
-    
+    cows = 0   
 
 
 if tries == 0:
-    print "You got out of attempts"
+    print "You got out of attempts!\nThe secret number was %d" %int(secretNumber)
 
-
-
-"""    
-Lambda functions
-bulls = sum(map(lambda x,y: 1 if (x == y) else 0, a, b))
-cows = sum(map(lambda x,y: 1 if x != y and x in b else 0, a, b))
-"""
