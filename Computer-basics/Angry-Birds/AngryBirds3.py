@@ -18,6 +18,21 @@ pigDistance = 50
 score = 0
 ammo = 5
 
+def validateShot():
+    if distance<(pigDistance-2):
+		print"Too short to kill the pig"
+
+    elif distance>(pigDistance+2):
+		print"Too long to kill the pig."
+
+    else:
+		print"???You killed the pig!!!"
+		score += 1
+		pigDistance += 10
+
+def printInfo():
+    print"For a bird launched at %.2f feet per sec with an angle of %.2f degrees from the horizontal the distance traveled is  %.2f" %(speed, angle, distance)
+
 def angleOK():
     angle = float(raw_input("What angle(in degrees)?"))
     while angle<0 or angle >90:
@@ -47,22 +62,12 @@ while speed !=0:
 
     angle = angleOK()
 
-    print"For a bird launched at %.2f feet per sec with an angle of %.2f degrees \
-         from the horizontal the distance traveled is  %.2f" %(speed, angle, distance)
+    printInfo()
 
     angle = degreesToRadians(angle)
     distance = calculateDistance(speed, angle)
 
-    if distance<(pigDistance-2):
-		print"Too short to kill the pig"
-
-    elif distance>(pigDistance+2):
-		print"Too long to kill the pig."
-
-    else:
-		print"???You killed the pig!!!"
-		score += 1
-		pigDistance += 10
+    validateShot()
 
     ammo -= 1
 
@@ -72,5 +77,4 @@ while speed !=0:
     if ammo == 0:
         print"Good game and good bye!\n You killed %i pigs. No more attempts left." %score
         break
-
 
