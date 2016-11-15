@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=size\ pressure
+comment0.target=Wheel(double,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Wheel.\r\n\ \r\n\ @param\ double\ size\ of\ the\ wheel\ in\ bars.\r\n
+comment1.params=size
+comment1.target=void\ setSize(double)
+comment1.text=\r\n\ Sets\ the\ maximum\ size\ of\ the\ wheel.\r\n\ \r\n\ @param\ double\ Size\ of\ the\ wheel\ in\ bars.\r\n
+comment2.params=
+comment2.target=double\ getSize()
+comment2.text=\ \r\n\ Returns\ the\ value\ of\ the\ size\ field.\r\n\ \r\n\ @return\ double\ Size\ of\ the\ wheel\ in\ bars.\r\n
+comment3.params=pressure
+comment3.target=void\ setPressure(double)
+comment3.text=\r\n\ Sets\ the\ current\ air\ pressure\ inside\ the\ wheel.\r\n\ \r\n\ @param\ double\ Current\ air\ pressure\ of\ the\ wheel\ in\ the\ range\ [0,size]\r\n
+comment4.params=
+comment4.target=double\ getPressure()
+comment4.text=\ \r\n\ Returns\ the\ value\ of\ the\ air\ pressure\ field.\r\n\ \r\n\ @return\ double\ Air\ pressure\ value.\r\n
+comment5.params=
+comment5.target=boolean\ isOperational()
+comment5.text=\r\n\ Returns\ true\ if\ the\ wheel\ is\ operational\ for\ safe\ take\ offs\ and\ landings.\r\n\ \r\n\ @return\ boolean\ true\ if\ the\ ratio\ between\ pressure\ and\ size\ is\ at\ 80%\ or\ greater,\ otherwise,\ false.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\ \r\n\ Returns\ a\ String\ that\ contains\ the\ values\ of\ the\ size,\ pressure,\ ratio\ between\ pressure\ and\ size\ and\ if\ it's\ operational.\r\n\ \r\n\ @return\ String\ Code\ that\ represents\ this\ object,\ information\ about\ the\ fields\ in\ this\ class.\r\n
+comment7.params=
+comment7.target=void\ print()
+comment7.text=\r\n\ Print\ the\ return\ value\ of\ the\ toString()\ method\ in\ the\ computer's\ display.\r\n\ \r\n
+numComments=8

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Test()
+comment1.params=
+comment1.target=boolean\ testGender()
+comment1.text=\r\n\ Test\ gender\ related\ methods\ in\ the\ Person\ class.\ Verifies\ the\ right\ behaviour\ of\ the\ setGender,\ getGender\ and\ isAGirl\ methods.\r\n\ \r\n\ @return\ boolean\ true\ if\ the\ test\ runs\ correctly.\ False\ if\ at\ least\ one\ bugs\ is\ detected.\r\n
+comment2.params=
+comment2.target=boolean\ testAge()
+comment2.text=\ Test\ age\ related\ methods\ in\ the\ Person\ class.\ Verifies\ the\ right\ behaviour\ of\ the\ setAge,\ getAge\ and\ getCriticalAge\ methods.\r\n\ \r\n\ @return\ boolean\ true\ if\ the\ test\ runs\ correctly.\ False\ if\ at\ least\ one\ bug\ is\ detected.\r\n
+comment3.params=
+comment3.target=boolean\ test()
+comment3.text=\r\n\ Invokes\ to\ every\ test\ method\ in\ this\ class.\r\n\ \r\n\ @return\ boolean\ True\ if\ ALL\ the\ testing\ methods\ return\ true.\ False\ if\ at\ least\ one\ of\ the\ test\ methods\ returns\ false.\r\n
+numComments=4
